@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title> Our flask</title>
+    <meta charset="utf-8" >  
+    <style>
+        h1   {color: yellow; margin-left: 120px; font-size: 50px; font-family: Fantasy; text-shadow: 2px 2px 5px black}
+        h3   {color: red; font-family: Fantasy; font-size: 30px  }
+        p    {color: white; font-weight: bold; font-family: Sans-serif; margin-bottom: 10px;}
+
+    body{
+        background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.N6pYuBG0-_28BaKgRuedJAHaEK%26pid%3DApi&f=1');
+    }
+
+    div.inputan{
+    background: rgb(0,0,0 ,0.5);
+    left: 100px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 140px;
+    margin-left: 140px;
+
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px; 
+    }
+
+    
+    </style>
+
+</head>
+<body>
+    <h1>Ford Cars Price Prediction </h1>
+<div class="relative">
+
+</div>
+
+    <div class="inputan">
+    
+        <form action="/" method="POST">
+        <p class="tex">Year (between 2000 and 2020)</p>        
+        <input type="number", name= "year", id="quantity"  min="2000" max="2020",maxlength="4" ,size="50">
+        <p class="tex">Mileage</p>        
+        <input type="number", name= "mileage">
+        <p>Tax (between 0 and 300)</p>        
+        <input type="number", name= "tax",min="0" max="300">
+        <p>MPG</p>        
+        <input type="number", name= "mpg">
+        <p>Engine Size</p>        
+        <input type="number", name= "engine">
+        <input type="submit">
+        </form>
+        
+    <p ><h3>Predicted Car Price : ${{harga}}</h3></p>
+
+    </div>
+
+</body>
+</html>
